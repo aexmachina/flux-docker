@@ -22,7 +22,5 @@ RUN git clone https://github.com/aexmachina/nvbclient
 WORKDIR nvbclient
 RUN python3 setup.py develop
 
-# RUN echo "Hello"
-
-RUN initialize_nvb_client_db development.ini
-RUN pserve development.ini
+# RUN initialize_nvb_client_db development.ini
+# RUN pserve development.ini

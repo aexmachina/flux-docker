@@ -1,10 +1,11 @@
 ```bash
-docker build -t nvbclient .
+docker build -t nvbclient git@github.com:aexmachina/flux-docker.git
 docker run -it nbvclient /bin/bash
 ```
 
+Then inside the VM...
+
 ```bash
-python3 setup.py develop
-initialize_nvb_client_db development.ini
+initialize_nvb_client_db development.ini # press Enter :)
 pserve development.ini
 ```
